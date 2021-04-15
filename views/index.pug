@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  if nodeForms.length
+    table.listing-table.table-dark.table-striped
+      tr
+        th Name
+        th Email
+        th Message
+      each nodeForm in nodeForms
+        tr
+          td= nodeForm.name
+          td= nodeForm.email
+          td= nodeForm.message
+  else
+   p ( ͡ ͜ʖ ͡ ) No records yet ｡･:*:･ﾟ’★, ｡･:*:･ﾟ’☆
+
+
+

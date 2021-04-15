@@ -1,0 +1,54 @@
+extends layout 
+//-  le 'layout.pug' est appelé dans le 'form.pug' 
+block content
+  -data = data || {}
+
+  if errors
+    ul.my-errors
+      for error in errors
+        li= error.msg
+
+  form(action="./administration" method="POST" class="form-node-form") 
+
+    label(for="name") Name: 
+    input( 
+      type="text" 
+      id="name"
+      name="name"
+      class="form-control"
+      value=data.name 
+    )
+
+    label(for="email") Email:
+    input(
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      value=data.email
+    )
+
+    label(for="message") Message:
+      
+      textarea(
+        name="message",
+        id="message",
+        cols="40",
+        rows="5",
+        label="Message à envoyer au nouvel inscrit",
+        class="form-control",
+        value=data.message)
+      
+    input(type="submit" value="Valider les informations" class="btn btn-lg btn-primary btn-block")
+    h6 #{success}
+    br    
+    hr
+    a(href="./list" class="form-control") Aller à la page : liste
+    
+    a(href="./" class="form-control") Home
+    hr
+
+
+
+
+
