@@ -1,0 +1,5 @@
+Le dossier commentaires contient
+
+- Le wireframe
+- Le readme pour un "admin"
+

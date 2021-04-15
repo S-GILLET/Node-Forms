@@ -1,0 +1,31 @@
+{
+    "name": "node-forms_1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon ./start.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "alert": "^5.0.10",
+        "body-parser": "^1.19.0",
+        "bootstrap": "^4.6.0",
+        "colors": "^1.4.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.4.1",
+        "http-auth": "^4.1.4",
+        "js-popup": "^1.0.0",
+        "module": "^0.0.1",
+        "mongoose": "^5.9.14",
+        "nodemailer": "^6.5.0",
+        "path": "^0.12.7",
+        "pug": "^3.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
